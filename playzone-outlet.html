@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/logo/logo-iphone.png" />
+    <link rel="icon" type="image/png" href="assets/img/logo/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>ERP TECHNO GAME</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />    
+    <meta name="theme-color" content="#848ccf" />    
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/dashboardku.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/google-roboto-300-700.css" rel="stylesheet" />
+    <link rel="manifest" href="/manifest.webmanifest">
+    <style>
+        #scrolling-wrapper{
+            overflow: scroll;
+            background-color: #100 / Pcse17;
+            position: relative;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar-mini">
+            <div class="sidebar" data-active-color="blue" data-background-color="black">
+                <div class="logo">
+                    <a href="" class="simple-text">
+                        TechnoGame Dashboard
+                    </a>
+                </div>
+                <div class="logo logo-mini">
+                    <a href="" class="simple-text">
+                    </a>
+                </div>
+                <div class="sidebar-wrapper">
+                    <div class="user">
+                        <div class="photo">
+                            <img src="assets/img/photo_1.png" />
+                        </div>
+                        <div class="primary">
+                          
+                            <div class="collapse" id="collapseExample">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#">My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="./home.html">
+                                <i class="material-icons">dashboard</i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./chart.html">
+                                <i class="material-icons">timeline</i>
+                                <p>Charts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#pagesExamples" aria-expanded="true">
+                                <i class="material-icons">work</i>
+                                <p>Bisnis
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <div id="pagesExamples" class="collapse">
+                                <ul class="nav">
+                                    <li>
+                                        <a  href="./business-page.html">RMS & IFS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#pagesAkunting" aria-expanded="true">
+                                <i class="material-icons">account_balance</i>
+                                <p>Accounting
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <div id="pagesAkunting" class="collapse">
+                                <ul class="nav">
+                                    <li>
+                                        <a  href="./akuntingrms.html">RMS</a>
+                                    </li>
+                                    <li>
+                                        <a href="./akuntingifs.html">IFS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                      
+                        <li class="active">
+                            <a data-toggle="collapse" href="#componentsExamples">
+                                <i class="material-icons">house</i>
+                                <p>Outlets
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                            <div id="componentsExamples" class="collapse">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="./zone2000.html">Zone 2000</a>
+                                    </li>
+                                    <li  class="active">
+                                        <a href="./playzone.html">Play Zone</a>
+                                    </li>
+                                    <li>
+                                        <a href="./kiddieland.html">Kiddie Land</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./fnb.html">
+                                <i class="material-icons">fastfood</i>
+                                <p>FNB</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./machine.html">
+                                <i class="material-icons">sports_esports</i>
+                                <p>Mesin</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adduser.html">
+                                <i class="material-icons">assignment_ind</i>
+                                <p>Add User</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+        <div class="main-panel">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="font-weight: 500;">TechnoGame Dashboard</a>
+                        <img src="assets/img/logo/logo.svg" alt="logo" class="img-logo">
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">notifications</i>
+                                    <span class="notification">5</span>
+                                    <p class="hidden-lg hidden-md">
+                                        Notifications
+                                        <b class="caret"></b>
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Mike John responded to your email</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You have 5 new tasks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Andrew</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another Notification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another One</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="separator hidden-lg hidden-md"></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="scrolling-wrapper">
+                                <div class="card-outlet--1 bg-yellow">
+                                    <div class="card-header">
+                                        <h4 class="card-title" style="font-weight:bold;">R38 KLENDER - <small style="color: #fdb827;font-weight: bold;">PlayZone</small></h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <ul class="ul-content">
+                                            <li class="list-item">
+                                                <i class="material-icons" style="color:#7e8a97 ;">place</i>
+                                                <p style="color: #43425D;font-weight: 400;">Plaza Serang, Banten</p>
+                                            </li>
+                                            <li class="list-item">
+                                                <i class="material-icons" style="color:#7e8a97 ;">aspect_ratio</i>
+                                                <p style="color: #43425D;font-weight: 400;">1000 m/ 2</p>
+                                            </li>
+                                            <li class="list-item">
+                                                <i class="material-icons" style="color:#7e8a97 ;">face</i>
+                                                <p style="color: #43425D;font-weight: 400;">Mr.Regional A</p>
+                                            </li>
+                                            <li class="list-item">
+                                                <i class="material-icons" style="color:#7e8a97 ;">sentiment_satisfied_alt</i>
+                                                <p style="color: #43425D;font-weight: 400;">Mr.Supervisor A</p>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div class="card" style="background-color: #fff;">
+                                <div class="card-header">
+                                    <h4 class="card-title" style="font-weight: bold;">R38 KLENDER - <small style="color: #9c27b0;font-weight: bold;font-size: 14px;">Modal Target</small></h4>
+                                </div>
+                                <div id="line-outletModalPlayzone"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="scrolling-wrapper">
+                            <div class="col-md-6" id="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title" style="font-weight: bold;">R38 KLENDER</h4>
+                                    </div>
+                                    <div id="line-targetYearsPlayzone"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="col">
+                                <div class="card" >
+                                    <div class="card-header">
+                                        <h4 class="card-title" style="font-weight: bold;">R38 KLENDER</h4>
+                                    </div>
+                                    <div id="line-targetMonthPlayzone"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" style="font-weight: bold;">R38 KLENDER - <small style="color: #9c27b0;font-weight: bold;font-size: 18px;">Omset & Target Sale</small></h4>
+                                  
+                                </div>
+                                <div class="card-header-wrap">
+                                    <div class="card-header-left">
+                                        <button class="btn btn-fill btn-primary pencarian" data-toggle="tooltip" data-original-title="Pencarian" id="btnClear">
+                                            <i class="material-icons" style="font-size: 20px;margin-right: 5px;">search</i>
+                                            Pencarian
+                                        </button> 
+                                        <button class="btn btn-fill btn-primary" data-toggle="tooltip" data-original-title="Download Data Ke Excel">
+                                            <i class="material-icons"style="font-size: 20px;margin-right: 5px;">cloud_download</i>
+                                           Download
+                                        </button>
+                                    </div>
+
+                                   
+                                </div>
+                                <div class="card-content">
+                                    <table id="datatables"  class="table table-striped table-no-bordered table-hover responsive" width="100%" >
+                                        <thead>
+                                            <tr style="background-color: #848ccf;">
+                                                <th style="color:#fff;">No</th>
+                                                <th style="color:#fff;">Nama Outlet</th>
+                                                <th style="color:#fff;">Month</th>
+                                                <th style="color:#fff;">Years</th>
+                                                <th style="color:#fff;">Sale / Hari</th>
+                                                <th style="color:#fff;">Total</th>
+                                                <th style="color:#fff;">Target</th>
+                                                <th style="color:#fff;">Percens</th>
+                                                <th style="color:#fff;">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">Januari</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">100 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">February</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusGagal">Tidak Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">March</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusGagal">Tidak Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">April</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">May</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">June</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">July</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">August</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">September</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">October</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusTercapai">Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">November</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusGagal">Tidak Tercapai</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td class="nameOutlet">R38 KLENDER</td>
+                                                <td class="nameOutlet">December</td>
+                                                <td class="nameOutlet">2020</td>
+                                                <td class="statusSale">Rp.500,000,000</td>
+                                                <td class="statusTercapai">Rp.710,000,000</td>
+                                                <td class="targetDataTable">Rp.700,000,000</td>
+                                                <td style="font-weight: bold;">80 %</td>
+                                                <td class="statusGagal">Tidak Tercapai</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                  
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                       <a href="">TechnoGame Dashboard System</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+<!------------------------------------- MODAL PENCARIAN OMSET TARGET OUTLET PAGE OUTLET ----------------------------------------------------->
+
+    <div class="modal fade" role="dialog" id="modal-pencarianOutlet">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="font-weight: bold;color: #fff;">Pencarian</h4>
+                </div>
+               <div class="modal-body">  
+                    <form action="" method="POST">
+    
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="tahun" class="col-sm-4 col-form-label">Tahun</label>
+                                <div class="col-sm-8" style="padding-left: 10px;">
+                                    <select class="selectpicker" title="Pilih Tahun" id="tahun">
+                                        <option>2009</option>
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="StatusOmset" class="col-sm-4 col-form-label">Status Target</label>
+                                <div class="col-sm-8">
+                                    <select class="selectpicker" title="Pilih Status" id="StatusOmset">
+                                        <option>Proses</option>
+                                        <option>Tercapai</option>
+                                        <option>Tidak Tercapai</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                       <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="dateopening" class="col-sm-4 col-form-label">Dari Tanggal</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
+                                        </div>
+                                        <input placeholder="Dari Tanggal" type="text" class="form-control datepicker datepencarian" name="" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-group col-md-6">
+                                <label for="dateopening" class="col-sm-4 col-form-label">Sampai Tanggal</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <span class="material-icons" style="vertical-align: middle;color: #848ccf;">event</span>
+                                        </div>
+                                        <input placeholder="Sampai Tanggal" type="text" class="form-control datepicker datepencarian"  name="" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                     
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: end;">
+                                <a href="#" type="button" class="btn btn-primary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" type="submit">
+                                    <i class="material-icons" style="font-size: 24px;float: left;line-height: 30px;
+                                    width: 30px;
+                                    text-align: center;">search
+                                    </i>
+                                    <p class="textButton" style="padding: 0 5px;">Cari</p>
+                                </a>
+                                <a href="#" type="button" class="btn btn-secondary btn-fill"  data-dismiss="modal" style="padding: 5px 15px;" id="back">
+                                    <i class="material-icons" style="font-size: 24px;margin-right: 5px;float: left;line-height: 30px;
+                                    width: 30px;
+                                    text-align: center;">replay
+                                    </i>
+                                    <p class="textButton">Kembali</p>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                    
+               </div>
+            </div>
+         </div>
+    </div>
+<!------------------------------------------------------------------------------------------------------------->
+
+
+
+
+</body>
+
+<script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/dashboardku1.js"></script>
+<script src="assets/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/datatables/dataTables.min.js"></script>
+<script src="assets/js/dashboardku.js"></script>
+<script src="assets/js/highchart/highcharts.js"></script>
+<script src="assets/js/highchart/highcharts-exporting.js"></script>
+<script src="assets/js/highchart/highcharts-export.js"></script>
+<script src="assets/js/highchart/highcharts-access.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+<script src="assets/js/highchartscode/outletplayzone.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/jasny-bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+          $('#datatables').DataTable({
+              "pagingType": "full_numbers",
+              "lengthMenu": [
+                  [12, 30, 50, -1],
+                  [12, 30, 50, "All"]
+              ],
+              "language": {
+                  search: "_INPUT_",
+                  searchPlaceholder: "Search records",
+              }
+          });
+
+          $('#datatablesAsset').DataTable({
+              "pagingType": "full_numbers",
+              "lengthMenu": [
+                  [30, 50, 100, -1],
+                  [30, 50, 100, "All"]
+              ],
+              "language": {
+                  search: "_INPUT_",
+                  searchPlaceholder: "Search records",
+              }
+          });
+  
+  
+          $('#back').click(function() {
+              $('.form-control').val('');
+              $('.datepicker').datepicker('refresh');
+          });
+  
+          $('body').tooltip({
+              selector: '[data-toggle="tooltip"]',
+              placement:'top'
+          });
+  
+          $('.pencarian').on('click', function (event) {
+          event.preventDefault();
+  
+          const modalNamaPerusahaan   = $(this).parents('.singleSpesifikasi').find('.namaperusahaan').text();
+          const modalWilayahKerja     = $(this).parents('.singleSpesifikasi').find('.wilayahkerja').text();
+          const modalLokasi           = $(this).parents('.singleSpesifikasi').find('.lokasi').text();
+          const modalSpefikasi        = $(this).parents('.singleSpesifikasi').find('.spesifikasi').html();
+          
+          $('.datepencarian').datepicker({
+            format: "dd-MM-yyyy",
+            startView: "months",  
+           
+            });
+  
+          $('#modal-pencarianOutlet .modal-body>h4>.card-namaperusahaan').text(modalNamaPerusahaan);
+          $('#modal-pencarianOutlet .modal-body>.card-wilayahkerja').text(modalWilayahKerja);
+          $('#modal-pencarianOutlet .modal-body>.card-lokasi').text(modalLokasi);
+          $('#modal-pencarianOutlet .modal-body>.textarea>.card-desc').html(modalSpefikasi);
+  
+          $('.form-control').val('');
+          $('.datepencarian').datepicker('refresh');
+          $('#modal-pencarianOutlet').modal();
+   
+          });
+
+  
+      });
+  </script>
+  
+</html>
